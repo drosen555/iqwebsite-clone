@@ -82,7 +82,13 @@
 					</p>
 				</div>
 				<div class="col-sm ">
-					<img src="/img/db.svg " class="img-fluid" alt="database ">
+					<svg id="dbsvg"  style="height: 100%;width: 100%">
+	<ellipse stroke="#004793" ry="106.000001" rx="128.5" id="svg_1" cy="233.999999" cx="129.5" stroke-width="2" fill="none"/>
+  <ellipse stroke="#007bff" ry="106.000001" rx="128.5" id="svg_4" cy="189.818557" cx="129.5" stroke-width="2" fill="none"/>
+  <ellipse stroke="#006cd8" ry="106.000001" rx="128.5" id="svg_7" cy="145.535376" cx="129.5" stroke-width="2" fill="none"/>
+  <ellipse stroke="#007fff" ry="106.000001" rx="128.5" id="svg_8" cy="107.522219" cx="129.5" stroke-width="2" fill="none"/>
+</svg>
+					<!--<img src="/img/db.svg" class="img-fluid" alt="database ">-->
 				</div>
 			</div>
 		</div>
@@ -115,7 +121,10 @@
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " crossorigin="anonymous "></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js " integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q " crossorigin="anonymous "></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js " integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl " crossorigin="anonymous "></script>
-</body>
+		<script src="https://cdn.jsdelivr.net/npm/vivus@latest/dist/vivus.min.js"></script>
+		<script>
+  		new Vivus('dbsvg', {duration: 200},);
+	  </script>
 <footer>
 	<div class "container ">
 

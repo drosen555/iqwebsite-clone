@@ -4,6 +4,7 @@ html {
 @media (min-width: 768px) {
   html {
     font-size: 16px;
+
   }
 }
 
@@ -15,6 +16,11 @@ html {
   padding-bottom: 5rem;
 }
 
+.subheader{
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+
+}
 
 .loadtrans {
   font-weight: 350;

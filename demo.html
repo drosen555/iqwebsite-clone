@@ -12,7 +12,7 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">
 
 
-	<title>ELT vs ETL - ELTMaestro</title>
+	<title>Contact Us - ELTMaestro</title>
 </head>
 
 <body>
@@ -70,33 +70,45 @@
 	</nav>
 	<!-- END NAV -->
 	<!-- START CONTENT -->
-	<div class="header">
 		<div class="container pl-5">
-			<div class="row">
-				<div class="col">
-					<h2 class="display-3 ">ELT Vs. ETL</h2>
-					<p class="lead pb-5">What makes ELT special?</p>
-					<div class="row">
-						<div class="col">
-							<h1>One less platform</h1>
-							<p>In the ELT (Extract, Load, Transform) paradigm, operational data is loaded directly to the server that
-		hosts the data warehouse, into tables that have the same structure as the source tables. The data is
-		then transformed “in place,” and loaded into the data warehouse tables.</p>
-		<p>The magic lies in the fact that there is one less “hop” between machines; in fact, there is one less platform altogether. This is important because, data movement is a major source of bottlenecks.
-			 Having one less platform to buy and maintain, and one less environment for developers to learn are also major advantages.</p>
-						</div>
+
+				<h3 class="display-4  pb-4 pt-3 ">
+					Free live demo!
+				</h3>
+				<div class="row px-0 px-sm-5">
+
+					<div class="col-sm">
+						<p>We offer a live demo of ELTMaestro for all of our platforms. Enter your details below to request access.</p>
+						<form action="https://formspree.io/hoyogo1@gmail.com" method="POST">
+							<div class="form-group">
+								<label for="name">Name:</label>
+								<input type="text" class="form-control"  name="name" id="name" placeholder="Ari Smith">
+							</div>
+							<div class="form-group">
+							 <label for="platfrom">Select your platform</label>
+							 <select class="form-control" name="platform" id="platform">
+								 <option>Neteeza</option>
+								 <option>Amazon Redshift</option>
+								 <option>Hadoop</option>
+							 </select>
+						 </div>
+
+							<div class="form-group pb-1">
+								<label for="email">Email:</label>
+								<input type="email" id="email" class="form-control"  name="_replyto" placeholder="name@example.com">
+							</div>
+
+							<button class="btn btn-primary" type="submit" value="Send">Submit</button>
+						</form>
+
 
 					</div>
-					<img src="/img/fulltxt.svg " class="img-fluid" alt="demonstration of elt ">
-					<p class="pt-5"> ELT – extract, load, and transform – is replacing ETL (extract, transform, load) as the usual method of populating data warehouses. Modern data warehouse appliances and appliance-like systems, such as IBM Pure Data / Netezza, are ideally suited for
-						an ELT environment. ELTMaestro is a framework for ELT development, deployment, and production. ELTMaestro is not an ETL tool that has been repurposed for ELT; rather, it is designed from the ground up with ELT in mind, and fully supports the ELT
-						paradigm. At the same time, ELTMaestro is familiar and easy to learn for developers with experience in traditional ETL tools. </p>
 				</div>
 
 
 
-			</div>
 
+		</div>
 
 			<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 			<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " crossorigin="anonymous "></script>

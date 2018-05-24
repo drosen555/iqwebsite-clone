@@ -10,72 +10,29 @@
 	<link rel="stylesheet" href="css/elt.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#603cba">
+	<meta name="theme-color" content="#ffffff">
 
+	<title>Home - ELTMaestro</title>
+</head>
 
 	<title>ELT vs ETL - ELTMaestro</title>
 </head>
 
 <body>
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-		<a class="navbar-brand" href="index.html">
-			<img src="/img/logosmallwhite.png" width="56" height="30" class="d-inline-block align-top" alt="">ELTMaestro
-		</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-		 <span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="navbarNavDropdown">
-			<ul class="navbar-nav">
-				<li class="nav-item active">
-					<a class="nav-link " href="eltvs.html ">ELT vs ETL</a>
-				</li>
-				<li class="nav-item dropdown ">
-					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                 For Neteeza / PureData
-               </a>
-					<div class="dropdown-menu" aria-labelledby="navbarDropdown ">
-						<a class="dropdown-item" href="# ">Getting Started</a>
-						<a class="dropdown-item" href="# ">Submenu 2</a>
-					</div>
-				</li>
-				<li class="nav-item dropdown ">
-					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                 For Amazon Redshift
-               </a>
-					<div class="dropdown-menu " aria-labelledby="navbarDropdown ">
-						<a class="dropdown-item " href="# ">Getting Started</a>
-						<a class="dropdown-item " href="# ">Submenu 2</a>
-					</div>
-				</li>
-				<li class="nav-item dropdown ">
-					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                 For Hadoop
-               </a>
-					<div class="dropdown-menu " aria-labelledby="navbarDropdown ">
-						<a class="dropdown-item " href="# ">Getting Started</a>
-						<a class="dropdown-item " href="# ">Submenu 2</a>
-					</div>
-				</li>
-				<li class="nav-item dropdown ">
-					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                 Contact Us
-          </a>
-					<div class="dropdown-menu " aria-labelledby="navbarDropdown ">
-						<a class="dropdown-item " href="demo.html">Live Demo</a>
-						<a class="dropdown-item " href="contact.html">Email Us</a>
-					</div>
-				</li>
-				</li>
-			</ul>
-		</div>
-	</nav>
+<?php include 'header.php';?>
 	<!-- END NAV -->
 	<!-- START CONTENT -->
-	<div class="header">
-		<div class="container pl-5">
+
+		<div class="container pl-5 ">
 			<div class="row">
 				<div class="col">
-					<h2 class="display-3 ">ELT Vs. ETL</h2>
-					<p class="lead pb-5">What makes ELT special?</p>
+					<h3 class="display-4  pb-4  pt-3">What makes ELT special?</h3>
 					<div class="row">
 						<div class="col">
 							<h1>One less platform</h1>
@@ -87,7 +44,7 @@
 						</div>
 
 					</div>
-					<img src="/img/fulltxt.svg " class="img-fluid" alt="demonstration of elt ">
+					<img src="img/fulltxt.svg " class="img-fluid" alt="demonstration of elt ">
 					<p class="pt-5"> ELT – extract, load, and transform – is replacing ETL (extract, transform, load) as the usual method of populating data warehouses. Modern data warehouse appliances and appliance-like systems, such as IBM Pure Data / Netezza, are ideally suited for
 						an ELT environment. ELTMaestro is a framework for ELT development, deployment, and production. ELTMaestro is not an ETL tool that has been repurposed for ELT; rather, it is designed from the ground up with ELT in mind, and fully supports the ELT
 						paradigm. At the same time, ELTMaestro is familiar and easy to learn for developers with experience in traditional ETL tools. </p>

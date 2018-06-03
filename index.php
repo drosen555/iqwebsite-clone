@@ -31,7 +31,7 @@
 				<div class="col-sm ">
 					<h2 class=" display-4 loadtrans">ELTMaestro</h2>
 					<p class="lead ">ELTMaestro is a complete software package that makes it faster and easier to analyze and transport data compared to traditional ETL.</p>
-					<p class="lead pb-3 ">This is accomplished by offloading the workload of a cenrtal ETL server to several high-performance Neteeza, Redshift, or Spark servers common in data analytics.</p>
+					<p class="lead pb-3 ">This is accomplished by offloading the workload of a central ETL server to several high-performance Neteeza, Redshift, or Spark servers common in data analytics.</p>
 					<a class="btn btn-xlarge btn-primary" href="contact.php" role="button" >Purchase</a>
 					<a class="btn btn-xlarge btn-secondary" href="whitepapers.php" role="button" >Learn More</a>
 				</div>

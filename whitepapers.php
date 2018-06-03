@@ -63,7 +63,7 @@
 	<div class "container ">
 
 		<hr>
-		<p class="pl-4 "> &copy; IQAssociates 2018</p>
+		<p class="pl-4 "> &copy; IQ Associates 2018</p>
 
 		</container>
 </footer>

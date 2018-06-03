@@ -31,13 +31,13 @@
 		<div class="container pl-5">
 				<h3 class="display-4  pb-4 pt-3 ">Whitepapers</h3>
 				<div class="row px-0 px-sm-5">
-					<p class="lead pb-3">A collection of whitepapers going into detail about ELT.</p>
+					<p class="lead pb-3">A collection of whitepapers describing the advantages of the ELT paradigm.</p>
 					  <div class="col-sm-6">
 
 					    <div class="card">
 					      <div class="card-body">
 					        <h5 class="card-title">ELTMaestro and the ELT Paradigm Shift</h5>
-					        <p class="card-text">An in depth explination of the benefits of ELT given the proliferation of high performance data warehouse tools like Neteeza.</p>
+					        <p class="card-text">This whitepaper provides an in depth explination of what ELT is and how it will change the world.</p>
 					        <a href="pdf/ELTMaestro-and-the-ELT-Paradigm-Shift.pdf" class="btn btn-primary">View/Download PDF</a>
 					      </div>
 					    </div>
@@ -46,7 +46,7 @@
 					    <div class="card">
 					      <div class="card-body">
 					        <h5 class="card-title">ELTMaestro for RedShift: ELT in the Cloud v1</h5>
-					        <p class="card-text">Describes the benefits of using ELTMaestro with Redshift (and by extention, other cloud providers)</p>
+					        <p class="card-text">This whitepaper touts the benefits of using ELTMaestro with Redshift (and other similar cloud providers)</p>
 					        <a href="pdf/ELTMaestro-for-RedShift-ELT-in-the-Cloud-v1.pdf" class="btn btn-primary">View/Download PDF</a>
 					      </div>
 					    </div>

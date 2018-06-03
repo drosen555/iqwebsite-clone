@@ -36,11 +36,11 @@
 				<div class="row px-0 px-sm-5">
 
 					<div class="col-sm">
-						<p class="lead pb-1">Contact IQ Associates directly to get support or buy ELTMaestro</p>
+						<p class="lead pb-1">Contact IQ Associates directly to get support or purchase ELTMaestro</p>
 						<h3><i class=" fa fa-phone pr-5 pb-4"></i>(978) 455-3096</h3>
-						<h3><i class=" fa fa-envelope pr-5"></i>dave@iq-associates.com</h3>
+						<h3><i class=" fa fa-envelope pr-5"></i>david@iq-associates.com</h3>
 						<p class="lead pt-2 pb-2">Or use this form:</p>
-						<form action="https://formspree.io/hoyogo1@gmail.com" method="POST">
+						<form action="https://formspree.io/david@iq-associates.com " method="POST">
 							<div class="form-group">
 								<label for="name">Name*</label>
 								<input type="text" class="form-control"  name="name" id="name" placeholder="Ari Smith" required>

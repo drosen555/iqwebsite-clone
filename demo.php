@@ -37,7 +37,7 @@
 
 					<div class="col-sm">
 						<p class="lead">We offer a live demo of ELTMaestro for all supported platforms. Enter your details below to request access.</p>
-						<form action="https://formspree.io/hoyogo1@gmail.com" method="POST">
+						<form action="https://formspree.io/david@iq-associates.com " method="POST">
 							<div class="form-group">
 								<label for="name">Name*</label>
 								<input type="text" class="form-control"  name="name" id="name" placeholder="John Smith" required>

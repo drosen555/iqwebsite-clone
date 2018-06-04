@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <a class="navbar-brand" href="index.php">
-    <img src="img/logosmallwhite.png" width="56" height="30" class="d-inline-block align-top" alt="">ELTMaestro
+    <img src="img/starmatch.svg" width="70" height="70" class="d-inline-block align-top" alt="">ELTMaestro
   </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
    <span class="navbar-toggler-icon"></span>

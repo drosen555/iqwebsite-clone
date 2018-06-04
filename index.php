@@ -36,7 +36,7 @@
 					<a class="btn btn-xlarge btn-secondary" href="whitepapers.php" role="button" >Learn More</a>
 				</div>
 				<div class="col-sm ">
-					<img src="img/starmatch.svg" class="img-fluid" alt="star logo">
+					<img src="img/starmatch.svg" class="img-star img-fluid" alt="star logo">
 				</div>
 			</div>
 		</div>

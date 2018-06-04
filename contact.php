@@ -21,7 +21,7 @@
 	<title>Home - ELTMaestro</title>
 </head>
 
-	<title>Contact Us - ELTMaestro</title>
+	<title>Contact us - ELTMaestro</title>
 </head>
 
 <body>
@@ -31,12 +31,12 @@
 		<div class="container pl-5">
 
 				<h3 class="display-4  pb-4 pt-3 ">
-					Contact Us
+					Contact us
 				</h3>
 				<div class="row px-0 px-sm-5">
 
 					<div class="col-sm">
-						<p class="lead pb-1">Contact IQ Associates directly to get support or purchase ELTMaestro</p>
+						<p class="lead pb-1">Contact IQ Associates directly to get support or purchase ELTMaestro.</p>
 						<h3><i class=" fa fa-phone pr-5 pb-4"></i>(978) 455-3096</h3>
 						<h3><i class=" fa fa-envelope pr-5"></i>david@iq-associates.com</h3>
 						<p class="lead pt-2 pb-2">Or use this form:</p>

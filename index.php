@@ -32,8 +32,8 @@
 					<h2 class=" display-4 loadtrans">ELTMaestro</h2>
 					<p class="lead ">ELTMaestro is a data integration tool that loads and transforms data more efficiently than traditional ETL tools, with a smaller footprint, at a fraction of the cost.</p>
 					<p class="lead pb-3 ">ELTMaestro unlocks and extends the power of your AWS Redshift, IBM Netezza, or Hadoop/Spark platform to act as its own data loading and transformation tool.</p>
-					<a class="btn btn-xlarge btn-primary" href="contact.php" role="button" >Purchase</a>
-					<a class="btn btn-xlarge btn-secondary" href="whitepapers.php" role="button" >Learn More</a>
+					<a class="btn btn-xlarge btn-primary" href="contact.php" role="button" >Get started</a>
+					<a class="btn btn-xlarge btn-secondary" href="whitepapers.php" role="button" >Learn more</a>
 				</div>
 				<div class="col-sm ">
 					<img src="img/starmatch.svg" class="img-star img-fluid" alt="star logo">
@@ -59,7 +59,7 @@
 					<div class="p-2"><i class="fas fa-vial fa-3x float-left loadtrans"></i></div>
 					<div class="p-2">
 						<p class="lead">Testing and deployment framework </p>
-						<p>ELTMaestro comes with advanced debugging and logging features to make deployment and maintenence easy.
+						<p>ELTMaestro comes with advanced debugging and logging features to make deployment and maintenance easy.
 						</p>
 					</div>
 				</div>
@@ -119,7 +119,7 @@
 				</div>
 
 				<div class="col-md">
-					<h3 class="mb-3 "><i class="fas fa-star pr-3 loadtrans"></i>Ease of Use</h3>
+					<h3 class="mb-3 "><i class="fas fa-star pr-3 loadtrans"></i>Ease of use</h3>
 					<p>ELTMaestro is designed to look and feel familiar to the users of traditional ETL systems such as Informatica and DataStage.  ELTMaestro users write data integration programs using an intuitive visual dataflow language where icons connected by arrows represent sources, operations, and targets of data.  ELTMaestro presents users with a hierarchy of jobs and batches which can be readily integrated into production environments.  ELTMaestro provides parameters to control job behavior and to pass information between jobs.  ELTMaestro has debug modes and log information to help developers determine what is going wrong with their programs.  The result:  ELTMaestro is easy for anyone to learn and use.  For users of traditional ETL systems, ELTMaestro will look and feel familiar.</p>
 				</div>
 			</div>
@@ -153,7 +153,7 @@
 	<div class "container ">
 
 		<hr>
-		<p class="pl-4 "> &copy; IQAssociates 2018</p>
+		<p class="pl-4 "> &copy; IQ Associates 2018</p>
 
 		</container>
 </footer>

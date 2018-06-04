@@ -37,7 +37,7 @@
 					    <div class="card">
 					      <div class="card-body">
 					        <h5 class="card-title">ELTMaestro and the ELT Paradigm Shift</h5>
-					        <p class="card-text">This whitepaper provides an in depth explination of what ELT is and how it will change the world.</p>
+					        <p class="card-text">This whitepaper provides an in-depth explanation of ELT.</p>
 					        <a href="pdf/ELTMaestro-and-the-ELT-Paradigm-Shift.pdf" class="btn btn-primary">View/Download PDF</a>
 					      </div>
 					    </div>
@@ -46,7 +46,7 @@
 					    <div class="card">
 					      <div class="card-body">
 					        <h5 class="card-title">ELTMaestro for RedShift: ELT in the Cloud v1</h5>
-					        <p class="card-text">This whitepaper touts the benefits of using ELTMaestro with Redshift (and other similar cloud providers)</p>
+					        <p class="card-text">This whitepaper explains the benefits of using ELTMaestro with Redshift (and other similar cloud providers).</p>
 					        <a href="pdf/ELTMaestro-for-RedShift-ELT-in-the-Cloud-v1.pdf" class="btn btn-primary">View/Download PDF</a>
 					      </div>
 					    </div>

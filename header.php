@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <a class="navbar-brand" href="index.php">
-    <img src="img/starmatch.svg" width="70" height="70" class="d-inline-block align-top" alt="">ELTMaestro
+    <img src="img/starmatch.svg" width="20" height="20" class="d-inline-block align-top" alt=""> ELTMaestro
   </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
    <span class="navbar-toggler-icon"></span>
@@ -16,10 +16,10 @@
         <a class="nav-link " href="whitepapers.php ">Whitepapers</a>
       </li>
       <li class="nav-item ">
-        <a class="nav-link " href="demo.php ">Live Demo</a>
+        <a class="nav-link " href="demo.php ">Request demo</a>
       </li>
       <li class="nav-item ">
-        <a class="nav-link " href="contact.php ">Contact Us</a>
+        <a class="nav-link " href="contact.php ">Contact us</a>
       </li>
       <!--
       <li class="nav-item dropdown ">

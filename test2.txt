@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-my hi is better
-=======
 hi
->>>>>>> f6fb2fbe5cfdb7f415c449d78e6b31054dad6dc6

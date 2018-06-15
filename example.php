@@ -18,7 +18,7 @@
 	<meta name="msapplication-TileColor" content="#603cba">
 	<meta name="theme-color" content="#ffffff">
 
-	<title>Hehe I made the title xDDDD - ELTMaestro</title>
+	<title>Hehe I made the title xDDDD D- ELTMaestro</title>
 </head>
 
 

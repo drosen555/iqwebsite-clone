@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<!-- Required meta tags -->
+	<!-- Required meta tags hi -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<!-- Bootstrap CSS -->
@@ -30,13 +30,13 @@
 			<div class="row px-sm-4">
 				<div class="col-sm ">
 					<h2 class=" display-4 loadtrans">ELTMaestro</h2>
-					<p class="lead ">ELTMaestro is a complete software package that makes it faster and easier to analyze and transport data compared to traditional ETL.</p>
-					<p class="lead pb-3 ">This is accomplished by offloading the workload of a cenrtal ETL server to several high-performance Neteeza, Redshift, or Spark servers common in data analytics.</p>
-					<a class="btn btn-xlarge btn-primary" href="contact.php" role="button" >Purchase</a>
-					<a class="btn btn-xlarge btn-secondary" href="whitepapers.php" role="button" >Learn More</a>
+					<p class="lead ">ELTMaestro is a data integration tool that loads and transforms data more efficiently than traditional ETL tools, with a smaller footprint, at a fraction of the cost.</p>
+					<p class="lead pb-3 ">ELTMaestro unlocks and extends the power of your AWS Redshift, IBM Netezza, or Hadoop/Spark platform to act as its own data loading and transformation tool.</p>
+					<a class="btn btn-xlarge btn-primary" href="contact.php" role="button" >Get started</a>
+					<a class="btn btn-xlarge btn-secondary" href="whitepapers.php" role="button" >Learn more</a>
 				</div>
 				<div class="col-sm ">
-					<img src="img/starmatch.svg" class="img-fluid" alt="star logo">
+					<img src="img/starmatch.svg" class="img-star img-fluid" alt="star logo">
 				</div>
 			</div>
 		</div>
@@ -58,8 +58,8 @@
 				<div class="d-flex flex-row">
 					<div class="p-2"><i class="fas fa-vial fa-3x float-left loadtrans"></i></div>
 					<div class="p-2">
-						<p class="lead">Testing and Deployment framework </p>
-						<p>ELTMaestro comes with a host of advanced debugging and logging features to make deployment and maintenence easy.
+						<p class="lead">Testing and deployment framework </p>
+						<p>ELTMaestro comes with advanced debugging and logging features to make deployment and maintenance easy.
 						</p>
 					</div>
 				</div>
@@ -67,7 +67,7 @@
 				<div class="d-flex flex-row">
 					<div class="p-2"><i class="fas fa-terminal fa-3x float-left loadtrans"></i></div>
 					<div class="p-2">
-						<p class="lead">Built-In Jobs and Batch Scripts</p>
+						<p class="lead">Built-in jobs and batch scripts</p>
 						<p>ELTMaestro presents users with a hierarchy of jobs and batches which can be easily integrated into production environments.
 						</p>
 					</div>
@@ -77,7 +77,7 @@
 					<div class="d-flex flex-row">
 						<div class="p-2"><i class="fas fa-shield-alt fa-3x float-left loadtrans"></i></div>
 						<div class="p-2">
-							<p class="lead">Advanced Agent Secruity Scheme</p>
+							<p class="lead">Advanced agent security scheme</p>
 							<p>Agents, or processes that communicate between source and target machines, are able to keep communications private by intelligently managing connections between them.
 							</p>
 						</div>
@@ -85,16 +85,16 @@
 					<div class="d-flex flex-row">
 						<div class="p-2"><i class="fas fa-feather fa-3x float-left loadtrans"></i></div>
 						<div class="p-2">
-							<p class="lead">Lightweight footprint</p>
-							<p>Since ELTMaestro leverages prexisting engines like Spark and Redshift, its designers were able to focus on finding the most efficient and lightweight ways to use them.
+							<p class="lead">Small footprint</p>
+							<p>Unlike traditional ETL tools, ELTMaestro has no engine, since it relies on the underlying Spark (Netezza, Redshift, etc.) engine. This significantly reduces ELTMaestro's footprint.
 							</p>
 						</div>
 					</div>
 					<div class="d-flex flex-row">
 						<div class="p-2"><i class="fas fa-chart-bar fa-3x float-left loadtrans"></i></div>
 						<div class="p-2">
-							<p class="lead">Strong data quality analysis and control</p>
-							<p>The designers of ELTMaestro are longtime practitioners of ELT and data warehousing and have produced a product that includes features they felt were missing from other systems. </p>
+							<p class="lead">A best practices product</p>
+							<p>The designers of ELTMaestro are longtime practitioners of ELT and data warehousing and have built their experience into the product. </p>
 						</div>
 						</div>
 					</div>
@@ -119,7 +119,7 @@
 				</div>
 
 				<div class="col-md">
-					<h3 class="mb-3 "><i class="fas fa-star pr-3 loadtrans"></i>Ease of Use</h3>
+					<h3 class="mb-3 "><i class="fas fa-star pr-3 loadtrans"></i>Ease of use</h3>
 					<p>ELTMaestro is designed to look and feel familiar to the users of traditional ETL systems such as Informatica and DataStage.  ELTMaestro users write data integration programs using an intuitive visual dataflow language where icons connected by arrows represent sources, operations, and targets of data.  ELTMaestro presents users with a hierarchy of jobs and batches which can be readily integrated into production environments.  ELTMaestro provides parameters to control job behavior and to pass information between jobs.  ELTMaestro has debug modes and log information to help developers determine what is going wrong with their programs.  The result:  ELTMaestro is easy for anyone to learn and use.  For users of traditional ETL systems, ELTMaestro will look and feel familiar.</p>
 				</div>
 			</div>
@@ -153,7 +153,7 @@
 	<div class "container ">
 
 		<hr>
-		<p class="pl-4 "> &copy; IQAssociates 2018</p>
+		<p class="pl-4 "> &copy; IQ Associates 2018</p>
 
 		</container>
 </footer>

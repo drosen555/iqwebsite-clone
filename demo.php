@@ -18,10 +18,9 @@
 	<meta name="msapplication-TileColor" content="#603cba">
 	<meta name="theme-color" content="#ffffff">
 
-	<title>Home - ELTMaestro</title>
-</head>
 
-	<title>Contact Us - ELTMaestro</title>
+
+	<title>Demo - ELTMaestro</title>
 </head>
 
 <body>
@@ -31,7 +30,7 @@
 		<div class="container pl-5">
 
 				<h3 class="display-4  pb-4 pt-3 ">
-					Free live demo
+					Request demo
 				</h3>
 				<div class="row px-0 px-sm-5">
 
@@ -77,7 +76,7 @@
 	<div class "container ">
 
 		<hr>
-		<p class="pl-4 "> &copy; IQAssociates 2018</p>
+		<p class="pl-4 "> &copy; IQ Associates 2018</p>
 
 		</container>
 </footer>

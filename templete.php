@@ -21,9 +21,6 @@
 	<title>[Templete] - ELTMaestro</title>
 </head>
 
-	<title>[This is where the title for the tab goes] - ELTMaestro</title>
-</head>
-
 <body>
 <?php include 'header.php';?>
 	<!-- END NAV -->

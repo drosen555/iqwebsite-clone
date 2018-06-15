@@ -37,6 +37,7 @@
 
 					<div class="col-sm">
 						<p class="lead pb-1">[A subtitle]</p>
+						<p> [This is a paragraph. Write about what you want here. ]
 					</div>
 				</div>
 

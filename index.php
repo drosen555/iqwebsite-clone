@@ -31,7 +31,7 @@
 				<div class="col-sm ">
 					<h2 class=" display-4 loadtrans">ELTMaestro</h2>
 					<p class="lead ">ELTMaestro is a data integration tool that loads and transforms data more efficiently than traditional ETL tools, with a smaller footprint, at a fraction of the cost.</p>
-					<p class="lead pb-3 ">ELTMaestro unlocks and extends the power of your AWS Redshift, IBM Netezza, or Hadoop/Spark platform to act as its own data loading and transformation tool.</p>
+					<p class="lead pb-3 ">ELTMaestro unlocks and extends the power of your AWS Redshift, IBM Netezza, or Apache Spark platform to act as its own data loading and transformation tool.</p>
 					<a class="btn btn-xlarge btn-primary" href="contact.php" role="button" >Get started</a>
 					<a class="btn btn-xlarge btn-secondary" href="whitepapers.php" role="button" >Learn more</a>
 				</div>

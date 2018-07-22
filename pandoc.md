@@ -1,0 +1,1 @@
+pandoc "C:\Users\h\Documents\w2c test\test.docx" -o "C:\Users\h\Documents\w2c test\test.md" --extract-media="C:\Users\h\Documents\w2c test"

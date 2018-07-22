@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.0/dist/bootstrap-toc.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="/css/elt.css">
+
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#603cba">
+	<meta name="theme-color" content="#ffffff">
+
+	<title>ELTMaestro for Spark - Data integration on clusters - ELTMaestro</title>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<a class="navbar-brand" href="/">
+    <img src="/img/starmatch.svg" width="20" height="24" class="" alt=""> ELTMaestro
+  </a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+   <span class="navbar-toggler-icon"></span>
+  </button>
+		<div class="collapse navbar-collapse" id="navbarNavDropdown">
+			<ul class="navbar-nav">
+      <li class="nav-item ">
+        <a class="nav-link " href="/documentation">Documentation</a>
+      </li>
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle"  id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Whitepapers</a>
+				<div class="dropdown-menu " aria-labelledby="navbarDropdown ">
+					<a class="dropdown-item " href="/whitepapers/ELTMaestro-for-Spark-Data-integration-on-clusters/">ELTMaestro for Spark: Data integration on clusters</a>
+					<a class="dropdown-item " href="#">ELTMaestro and the ELT Paradigm Shift</a>
+					<a class="dropdown-item " href="#">ELTMaestro for RedShift: ELT in the Cloud</a>
+				</div>
+			</li>
+				<li class="nav-item ">
+					<a class="nav-link " href="/demo" id="big-blue">Join Beta</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link big-red" href="/try-a-sandbox" id="big-red">Try ELTMaestro Sandbox</a>
+				</li>
+				<li class="nav-item ">
+					<a class="nav-link " href="/contact">Contact us</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+	<!-- END NAV -->
+
+	<!-- START CONTENT -->
+	<body>
+	<div class="jumbotron jumbotron-fluid" style="background-image: url(/img/docs.jpg); background-size: cover;">
+<div class="container">
+<h1 data-toc-skip class="text-white display-4">ELTMaestro for Spark - Data integration on clusters</h1>
+<p class=" text-white"></p>
+</div>
+</div>
+
+<link rel="stylesheet" href="/css/docssass.css">
+<style>
+h1 {
+  font-size: 3.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+	color: #005ec3;
+}
+img {
+  max-width: 100% !important;
+  height: auto !important;
+}
+
+nav[data-toggle='toc'] {
+  top: 42px;
+}
+h2,h4, h3, h5, h6 {
+  padding-top: 1rem !important;
+	font-weight: 300;
+	line-height: 1.2;
+	color: #005ec3;
+	}
+.border-right {
+  border-right: 1px solid black;
+}
+ul {
+
+}.toc-link{
+	padding: 0 !important ;
+	list-style-type: none !important;
+}
+
+
+/* small screens */
+@media (max-width: 768px) {
+  /* override stickyness so that the navigation does not follow scrolling */
+  nav[data-toggle='toc'] {
+    margin-bottom: 42px;
+    position: static;
+  }
+
+
+  nav[data-toggle='toc'] .nav .nav {
+    display: block;
+  }
+
+}
+</style>
+</head>
+
+<body data-spy="scroll" data-target="#toc" >
+  <div class="container-fluid pl-5 pr-5 pt-3 notwide">
+    <div class="row">
+      <!-- sidebar, which will move to the top on a small screen -->
+
+      <!-- main content area -->
+			<div class="col-md-7">
+        <p><strong>This Whitepaper is also available as a PDF <a href="/whitepapers/pdf/ELTMaestro-for-Spark.pdf">here</a></strong></p>
+
+<h1 id="introduction">Introduction</h1>
+
+<p>Spark represents an important milestone in the effort to make computing
+on clusters practical and generally available.</p>
+
+<p>Hadoop / MapReduce, introduced the early 2000s, allows clusters to be
+built from commodity hardware by implementing fault tolerance of the
+cluster’s nodes – so a multi-node system could survive the crash of an
+individual node. But the MapReduce paradigm involves many iterations of
+high-volume dataflows between memory and disk, which impact performance
+and make MapReduce unsuited for many of the kinds of computations that
+data scientists want to use clusters for.</p>
+
+<p>More recently, Spark has received a great deal of attention, and has in
+many cases become a de facto replacement for MapReduce, as it addresses
+many of MapReduce’s shortcomings. Spark can perform more of its
+computation in memory without landing data to disk, which in many cases
+gives Spark order-of-magnitude performance advantages over MapReduce.
+Spark is written in Scala and leverages the Scala functional programming
+model to implement fault tolerance. Scala also provides Spark with a
+convenient and popular API.</p>
+
+<p>Spark contains rich structures called <em>dataframes</em> which are used to
+represent relational tables. Dataframes are <em>distributed,</em> meaning that
+parts of them live on each node in the cluster. The result is that
+relational operations on dataframes, such as joins, filters, and
+aggregations take place in parallel, and are very efficient. This makes
+Spark clusters potentially very useful as data warehousing and business
+intelligence platforms, since the ability to do such operations on large
+tables quickly is precisely what DW and BI platforms require.</p>
+
+<p>Spark clusters also have a distinct <em>dis</em>advantage as a DW/BI platform
+– namely, that unlike traditional DW/BI platforms like DataStage or
+Informatica, there is a dearth of tools for loading relational data into
+them, and for transforming and organizing that data into the forms
+required by DW/BI applications. Spark is rapidly evolving, and it is not
+always easy for developers to keep up with the latest practices. In
+fact, important changes to Spark have occurred while this paper was
+being written. Spark has the potential to change the way data
+warehousing is done, making large scale warehouses more ubiquitous and
+easier to build -- but its attractive aspects of efficiency and low
+cost are surrounded by a thorny wall of inaccessibility.</p>
+
+<p>ELTMaestro for Spark is our solution to address this gap – the sword
+that cuts through the wall of thorns. ELTMaestro for Spark is a new data
+integration tool that allows users to load, transform, and organize data
+on Spark clusters using an intuitive visual dataflow language that is
+familiar to users of traditional ETL tools such as Informatica or
+DataStage. Unlike traditional ETL tools, however, ELTMaestro for Spark
+is powered by the Spark cluster itself and has no independent
+transformation engine. This fact has important consequences in terms of
+the <em>cost</em>, <em>complexity</em>, and <em>performance</em> of the system – simply put,
+ELTMaestro for Spark is superior to traditional ETL in all three
+dimensions.</p>
+
+<p><img src="/whitepapers/img/spark/image7.jpg" alt="" /></p>
+
+<p>Figure 1</p>
+
+<p>In the next few sections we’ll explain some of the principles underlying
+ELTMaestro for Spark, place ELTMaestro for Spark in the context of other
+data integration tools and introduce some of ETLMaestro for Spark’s
+advanced features.</p>
+
+<h2 id="eltmaestro-for-spark-an-elt-solution">ELTMaestro for Spark: An ELT solution</h2>
+
+<p>ELTMaestro for Spark is based on an architectural concept called <em>ELT.</em>
+To understand the advantages of ELTMaestro for Spark over other data
+integration tools, it is necessary to understand the difference between
+ETL and ELT and the reasons why ELT, when feasible, is preferred.</p>
+
+<h3 id="a-brief-history-of-etl">A brief history of ETL</h3>
+
+<p><img src="/whitepapers/img/spark/image6.png" alt="" />
+Figure 2</p>
+
+<p>When data engineers first began to develop data warehouses, they
+basically architected them according to the diagram in Figure 2. Figure
+2 is essentially a physical embodiment of how the data engineers thought
+about the problem – “You have to <em><strong>e</strong>xtract</em> that data from the
+operational systems (i.e., the sources), rearrange (that is,
+<em><strong>t</strong>ransform</em>) the data into the form needed for access by analysts,
+and then <em><strong>l</strong>oad</em> it in that form to a location where it can be
+accessed.”</p>
+
+<p>There were (and are) well-developed schools of thought –notably, those
+of <a href="https://en.wikipedia.org/wiki/Ralph_Kimball">[Ralph
+Kimball]{.underline}</a> and
+<a href="https://en.wikipedia.org/wiki/Bill_Inmon">[Bill Inmon]{.underline}</a> –
+about how the data should be organized so that analysts using the
+warehouse would be able to access what they needed most easily, and so
+that the warehouse would grow in a manageable way over time. It was
+generally thought that the success of the data warehouse depended on
+getting this organization right.</p>
+
+<p>In this environment, the ETL Server was considered a critical component
+– the ETL server, after all, is the component responsible for the
+organization of the data warehouse. With data volumes inexorably
+increasing, ETL servers, including the software that ran on them, grew
+ever more complex and expensive. Today, ETL servers for large DWs
+running IBM DataStage, Informatica, or Ab Initio can be expected to cost
+on the order of a million dollars.</p>
+
+<p>Meanwhile, trouble developed on the right side of Figure 2. Despite all
+the attention paid to organizing the data in the DW according the
+theories of Kimball or Inmon, data in the DW was found to to be
+increasingly inaccessible. The problem was not so much one of warehouse
+design, rather one of mismatched tools. It was not initially
+well-understood that data warehouses were fundamentally different from
+other kinds of databases. Designers felt that if the data in the
+warehouse were properly organized, then it would perform properly – but
+less attention was paid to the database the warehouse was built on,
+which was often whatever OLTP database was handy – Oracle, DB2, etc.</p>
+
+<p>It turns out that databases can be tuned in two different ways: They can
+be tuned to handle <em>many small transactions</em> – where “many” means
+perhaps millions per day, and “small” means affecting a handful of rows
+per transaction. This is what the databases sitting behind typical
+retail operations do. On the other hand, they can handle a <em>few large
+transactions</em> – where “a few” means perhaps a hundred per day, and
+“large” means affecting millions or even billions of rows per
+transaction. This first type of databases is called an <em>OLTP</em> (for
+<em>online transactional processing</em>) database. We’ll call the second type
+a <em>data warehouse</em> (or <em>DW</em>) <em>platform</em>.</p>
+
+<p>Databases are either good at OLTP or DW, but not both. Place
+sufficiently heavy data-warehouse-type demands on an OLTP database, and
+it will founder. If the database on the right in Figure 2 is an OLTP
+database, then there are going to be cases when large queries on its
+contents will fail.</p>
+
+<p>This realization led to the introduction, beginning in the early 2000s,
+of <a href="https://en.wikipedia.org/wiki/Data_warehouse_appliance"><em>[data warehouse
+appliances]{.underline}</em></a>,
+notably Netezza.</p>
+
+<p><img src="/whitepapers/img/spark/image8.png" alt="" /><img src="/whitepapers/img/spark/image12.jpg" alt="" /></p>
+
+<p>Figure 3</p>
+
+<p>The Netezza platform was a parallel computer that could perform very
+fast SQL queries on large datasets and had other features that made it
+suitable for use as a data warehousing platform. Beginning in 2003,
+Netezza started being sold as a platform for data warehouses, often
+replacing Oracle as the data warehouse platform in Figure 2. In time,
+other solutions suitable for the right side of Figure 3 became
+available, such as Amazon Redshift. Apache Spark, a cluster platform, is
+one of the latest of these.</p>
+
+<p>Some common advantages of these solutions over the OLTP databases they
+replaced are:</p>
+
+<ul>
+  <li>They are much better at supporting “data-warehouse-type” queries –
+    <blockquote>
+      <p>that is, joins or other queries involving millions or billions of
+rows.</p>
+    </blockquote>
+  </li>
+  <li>
+    <p>They are orders of magnitude less expensive.</p>
+  </li>
+  <li>
+    <p>They are easier to maintain.</p>
+  </li>
+  <li>
+    <p>They have a smaller footprint.</p>
+  </li>
+  <li>They are not necessarily smaller in terms of actual storage.</li>
+</ul>
+
+<p>The effect of these new technologies on the world of data warehousing
+was rapid and conspicuous; one would no longer find attempts to build
+serious DWs on OLTP databases.</p>
+
+<p>But what about the rest of the picture? Do the changes on the right-hand
+of Figure 2 side have consequences for the ETL server as well? Indeed,
+they do since the ETL servers now represent an expensive <em>duplication of
+resources</em>. The technologies now used on the right-hand side of the
+diagram duplicate the capacities of the ETL server, which, in large
+part, consist of efficiently carrying out join- and sort-like operations
+on large datasets. The new DW platforms are, in effect, excellent
+transformation engines themselves. Why not use them to replace the ETL
+servers altogether? This suggests a simpler architecture, shown in
+Figure 4:</p>
+
+<p><img src="/whitepapers/img/spark/image10.png" alt="" /></p>
+
+<p>Figure 4</p>
+
+<h3 id="elt-nothing-in-between">ELT: Nothing in-between</h3>
+
+<p>The advantages of the ELT architecture over ETL are difficult to
+overstate. They are best understood by simply comparing Figure 3 and
+Figure 4. When a Figure 4 architecture is possible, removing the ETL
+server confers the obvious benefits of reducing cost, reducing latency,
+and removing a data volume bottleneck. Obtaining these benefits would
+not only improve existing data warehouses; the reduced up-front cost,
+footprint, and maintenance overhead could lead to data warehousing
+resources being available to organizations for which they were
+previously out of reach.</p>
+
+<p>There are, however, benefits of the ETL server that are difficult to do
+without. The ETL server is the platform for the ETL tools with which
+developers are familiar – tools like DataStage, Informatica, and Ab
+Initio. These tools relieve the developers of the necessity of writing
+code in SQL, Scala, C++ or whatever language of the platform might be,
+instead letting them program by constructing dataflows in a visual
+language. The tools also provide important abstractions such as “jobs”.
+“job sequences,” “job parameters,” and so on. For developers to
+home-grow their own tools for these tasks is laborious and error-prone.
+But if a data warehouse is to operate smoothly, reliably ingesting and
+processing data day after day, these tools are critical.</p>
+
+<h3 id="eltmaestro-for-spark">ELTMaestro for Spark</h3>
+
+<p>How, then, can we have our cake and eat it too? How can we get the
+architectural advantages of Figure 4 – dispensing with the ETL server,
+saving that money, and realizing those performance gains – without
+giving up the conveniences that tools like DataStage and Informatica
+provide? That is precisely the purpose of ELTMaestro.</p>
+
+<p>ELTMaestro’s reason for existence is to <em>enable</em> the architecture shown
+in Figure 4. An edition of ELTMaestro exists for each supported platform
+that can be used on the right-hand side. We are proud, in this paper, to
+announce that these platforms now include Apache Spark.</p>
+
+<h3 id="agents-for-secure-extraction-and-communication">Agents for secure extraction and communication</h3>
+
+<p>ETL servers have another role which we cannot ignore; they also extract
+data from sources. In cloud-based environments, extracted data may need
+to move across the open internet; this adds a dimension of security
+concerns that need to be addressed.</p>
+
+<p>ELTMaestro extracts data from remote sources by using a scheme of
+<em>agents.</em> Agents are processes installed on data sources that know how
+to communicate with the target. Any number of agents may be installed on
+a source, and any number of agents can be installed overall. When a
+connection to a source is requested, the first responding agent that can
+support that connection is used. Multiplexing may occur when another
+connection to the same source is sought; in this case another, unused
+agent may reply and support the second connection. By supporting
+multiplexing, agents help the enterprise maintain a degree of control
+over bandwidth in a Cloud implementation.</p>
+
+<p>Agents take care of encrypting and compressing data communication
+between source and target (using AES 256-bit encryption) alleviating the
+concern of eavesdropping.</p>
+
+<p>Agents also help to maintain data security because the data sources
+where they reside tend to be inside internal networks where they are
+invisible to the outside world. The agent can see the target machine,
+and can initiate communication with the target machine, but the target
+machine can’t see the agent, other than to respond to its queries.
+Agents maintain contact with the target machine by pinging the target
+every few seconds, to see if there are requests for their data. If there
+are, a connection is established and data is sent to the target. The
+target never needs to know the IP address of the source, which helps to
+prevent illegitimate connections.</p>
+
+<h1 id="conclusion">Conclusion</h1>
+
+<p>Apache Spark represents a potential revolution in data warehousing.</p>
+
+<p>The cost and performance profile of Apache Spark means that data
+warehousing resources that were once only available to Fortune 500
+companies with vast IT budgets are now available to very moderate-size
+firms with limited means.</p>
+
+<p>Traditional ETL architecture is simply a stumbling block preventing this
+revolution. By enabling developers with the tools they need to build and
+maintain data warehouses with a platform architecture that makes sense,
+we are simply removing this stumbling block, and letting the revolution
+move forward.</p>
+
+      </div>
+			<div class=col-2>
+				<nav id="toc" data-toggle="toc" class="sticky-top"></nav>
+			</div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " crossorigin="anonymous "></script>
+
+</body>
+
+
+
+
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " crossorigin="anonymous "></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js " integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q " crossorigin="anonymous "></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js " integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl " crossorigin="anonymous "></script>
+	<script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.0/dist/bootstrap-toc.min.js"></script>
+</body>
+<footer>
+	<div class "container ">
+
+		<hr>
+		<p class="pl-4 "> &copy; IQ Associates 2018</p>
+
+		</container>
+</footer>
+
+</html>

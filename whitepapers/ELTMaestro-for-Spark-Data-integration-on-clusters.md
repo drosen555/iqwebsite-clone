@@ -1,15 +1,12 @@
 ---
 layout: defaultsecondary
 title: Integrator for Spark - Data integration on clusters
-background: /img/docs.jpg
+background: "/img/docs.jpg"
 
 ---
+**This Whitepaper is also available as a PDF** [**here**](/whitepapers/pdf/Integrator-for-Spark.pdf)
 
-
-**This Whitepaper is also available as a PDF [here](/whitepapers/pdf/Integrator-for-Spark.pdf)**
-
-Introduction
-============
+# Introduction
 
 Spark represents an important milestone in the effort to make computing
 on clusters practical and generally available.
@@ -31,8 +28,8 @@ Spark is written in Scala and leverages the Scala functional programming
 model to implement fault tolerance. Scala also provides Spark with a
 convenient and popular API.
 
-Spark contains rich structures called *dataframes* which are used to
-represent relational tables. Dataframes are *distributed,* meaning that
+Spark contains rich structures called _dataframes_ which are used to
+represent relational tables. Dataframes are _distributed,_ meaning that
 parts of them live on each node in the cluster. The result is that
 relational operations on dataframes, such as joins, filters, and
 aggregations take place in parallel, and are very efficient. This makes
@@ -40,8 +37,8 @@ Spark clusters potentially very useful as data warehousing and business
 intelligence platforms, since the ability to do such operations on large
 tables quickly is precisely what DW and BI platforms require.
 
-Spark clusters also have a distinct *dis*advantage as a DW/BI platform
--- namely, that unlike traditional DW/BI platforms like DataStage or
+Spark clusters also have a distinct _dis_advantage as a DW/BI platform
+\-- namely, that unlike traditional DW/BI platforms like DataStage or
 Informatica, there is a dearth of tools for loading relational data into
 them, and for transforming and organizing that data into the forms
 required by DW/BI applications. Spark is rapidly evolving, and it is not
@@ -49,7 +46,7 @@ always easy for developers to keep up with the latest practices. In
 fact, important changes to Spark have occurred while this paper was
 being written. Spark has the potential to change the way data
 warehousing is done, making large scale warehouses more ubiquitous and
-easier to build \-- but its attractive aspects of efficiency and low
+easier to build -- but its attractive aspects of efficiency and low
 cost are surrounded by a thorny wall of inaccessibility.
 
 Integrator for Spark is our solution to address this gap -- the sword
@@ -60,7 +57,7 @@ familiar to users of traditional ETL tools such as Informatica or
 DataStage. Unlike traditional ETL tools, however, Integrator for Spark
 is powered by the Spark cluster itself and has no independent
 transformation engine. This fact has important consequences in terms of
-the *cost*, *complexity*, and *performance* of the system -- simply put,
+the _cost_, _complexity_, and _performance_ of the system -- simply put,
 Integrator for Spark is superior to traditional ETL in all three
 dimensions.
 
@@ -74,10 +71,9 @@ data integration tools and introduce some of Integrator for Spark's
 
 advanced features.
 
-Integrator for Spark: An ELT solution
--------------------------------------
+## Integrator for Spark: An ELT solution
 
-Integrator for Spark is based on an architectural concept called *ELT.*
+Integrator for Spark is based on an architectural concept called _ELT._
 To understand the advantages of Integrator for Spark over other data
 integration tools, it is necessary to understand the difference between
 ETL and ELT and the reasons why ELT, when feasible, is preferred.
@@ -90,16 +86,16 @@ Figure 2
 When data engineers first began to develop data warehouses, they
 basically architected them according to the diagram in Figure 2. Figure
 2 is essentially a physical embodiment of how the data engineers thought
-about the problem -- "You have to ***e**xtract* that data from the
+about the problem -- "You have to **_e_**_xtract_ that data from the
 operational systems (i.e., the sources), rearrange (that is,
-***t**ransform*) the data into the form needed for access by analysts,
-and then ***l**oad* it in that form to a location where it can be
+**_t_**_ransform_) the data into the form needed for access by analysts,
+and then **_l_**_oad_ it in that form to a location where it can be
 accessed."
 
 There were (and are) well-developed schools of thought --notably, those
-of [[Ralph
-Kimball]{.underline}](https://en.wikipedia.org/wiki/Ralph_Kimball) and
-[[Bill Inmon]{.underline}](https://en.wikipedia.org/wiki/Bill_Inmon) --
+of [\[Ralph
+Kimball\]{.underline}](https://en.wikipedia.org/wiki/Ralph_Kimball) and
+[\[Bill Inmon\]{.underline}](https://en.wikipedia.org/wiki/Bill_Inmon) --
 about how the data should be organized so that analysts using the
 warehouse would be able to access what they needed most easily, and so
 that the warehouse would grow in a manageable way over time. It was
@@ -107,7 +103,7 @@ generally thought that the success of the data warehouse depended on
 getting this organization right.
 
 In this environment, the ETL Server was considered a critical component
--- the ETL server, after all, is the component responsible for the
+\-- the ETL server, after all, is the component responsible for the
 organization of the data warehouse. With data volumes inexorably
 increasing, ETL servers, including the software that ran on them, grew
 ever more complex and expensive. Today, ETL servers for large DWs
@@ -126,15 +122,15 @@ less attention was paid to the database the warehouse was built on,
 which was often whatever OLTP database was handy -- Oracle, DB2, etc.
 
 It turns out that databases can be tuned in two different ways: They can
-be tuned to handle *many small transactions* -- where "many" means
+be tuned to handle _many small transactions_ -- where "many" means
 perhaps millions per day, and "small" means affecting a handful of rows
 per transaction. This is what the databases sitting behind typical
-retail operations do. On the other hand, they can handle a *few large
-transactions* -- where "a few" means perhaps a hundred per day, and
+retail operations do. On the other hand, they can handle a _few large
+transactions_ -- where "a few" means perhaps a hundred per day, and
 "large" means affecting millions or even billions of rows per
-transaction. This first type of databases is called an *OLTP* (for
-*online transactional processing*) database. We'll call the second type
-a *data warehouse* (or *DW*) *platform*.
+transaction. This first type of databases is called an _OLTP_ (for
+_online transactional processing_) database. We'll call the second type
+a _data warehouse_ (or _DW_) _platform_.
 
 Databases are either good at OLTP or DW, but not both. Place
 sufficiently heavy data-warehouse-type demands on an OLTP database, and
@@ -143,8 +139,8 @@ database, then there are going to be cases when large queries on its
 contents will fail.
 
 This realization led to the introduction, beginning in the early 2000s,
-of [*[data warehouse
-appliances]{.underline}*](https://en.wikipedia.org/wiki/Data_warehouse_appliance),
+of [_\[data warehouse
+appliances\]{.underline}_](https://en.wikipedia.org/wiki/Data_warehouse_appliance),
 notably Netezza.
 
 ![](/whitepapers/img/spark/image8.png)![](/whitepapers/img/spark/image12.jpg)
@@ -163,17 +159,14 @@ one of the latest of these.
 Some common advantages of these solutions over the OLTP databases they
 replaced are:
 
--   They are much better at supporting "data-warehouse-type" queries --
-    > that is, joins or other queries involving millions or billions of
-    > rows.
+* They are much better at supporting "data-warehouse-type" queries --
 
--   They are orders of magnitude less expensive.
-
--   They are easier to maintain.
-
--   They have a smaller footprint.
-
--   They are not necessarily smaller in terms of actual storage.
+  > that is, joins or other queries involving millions or billions of
+  > rows.
+* They are orders of magnitude less expensive.
+* They are easier to maintain.
+* They have a smaller footprint.
+* They are not necessarily smaller in terms of actual storage.
 
 The effect of these new technologies on the world of data warehousing
 was rapid and conspicuous; one would no longer find attempts to build
@@ -181,8 +174,8 @@ serious DWs on OLTP databases.
 
 But what about the rest of the picture? Do the changes on the right-hand
 of Figure 2 side have consequences for the ETL server as well? Indeed,
-they do since the ETL servers now represent an expensive *duplication of
-resources*. The technologies now used on the right-hand side of the
+they do since the ETL servers now represent an expensive _duplication of
+resources_. The technologies now used on the right-hand side of the
 diagram duplicate the capacities of the ETL server, which, in large
 part, consist of efficiently carrying out join- and sort-like operations
 on large datasets. The new DW platforms are, in effect, excellent
@@ -226,7 +219,7 @@ saving that money, and realizing those performance gains -- without
 giving up the conveniences that tools like DataStage and Informatica
 provide? That is precisely the purpose of Integrator.
 
-Integrator's reason for existence is to *enable* the architecture shown
+Integrator's reason for existence is to _enable_ the architecture shown
 in Figure 4. An edition of Integrator exists for each supported platform
 that can be used on the right-hand side. We are proud, in this paper, to
 announce that these platforms now include Apache Spark.
@@ -239,7 +232,7 @@ to move across the open internet; this adds a dimension of security
 concerns that need to be addressed.
 
 Integrator extracts data from remote sources by using a scheme of
-*agents.* Agents are processes installed on data sources that know how
+_agents._ Agents are processes installed on data sources that know how
 to communicate with the target. Any number of agents may be installed on
 a source, and any number of agents can be installed overall. When a
 connection to a source is requested, the first responding agent that can
@@ -264,8 +257,7 @@ are, a connection is established and data is sent to the target. The
 target never needs to know the IP address of the source, which helps to
 prevent illegitimate connections.
 
-Conclusion
-==========
+# Conclusion
 
 Apache Spark represents a potential revolution in data warehousing.
 

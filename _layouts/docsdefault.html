@@ -1,0 +1,38 @@
+---
+title: Integrator Docs- {{ page.title }}
+layout: defaultsecondaryparent
+---
+<link rel="stylesheet" href="/docs/css/docs.css">
+</head>
+
+<body data-spy="scroll" data-target="#toc" >
+  <div class="container-fluid pl-5 pr-5 pt-3">
+    <div class="row">
+      <!-- sidebar, which will move to the top on a small screen -->
+
+      <!-- main content area -->
+			<div class ="col-3">
+			{% for item in site.data.docstoc.toc %}
+			    <div class="toc-header">{{ item.title }}</div>
+			      <ul class="toc-link">
+			        {% for entry in item.subfolderitems %}
+			          <div class="toc-link"><a href="{{ entry.url }}">{{ entry.page }}</a></div>
+			        {% endfor %}
+			      </ul>
+			  {% endfor %}
+			</div>
+			<div class="col-md-7">
+
+
+
+        {{ content }}
+
+      </div>
+			<div class=col-2>
+				<nav id="toc" data-toggle="toc" class="sticky-top"></nav>
+			</div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " crossorigin="anonymous "></script>
+
+</body>

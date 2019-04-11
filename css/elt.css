@@ -1,0 +1,185 @@
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+
+}
+blockquote {
+    font-family: Georgia, serif;
+    position: relative;
+    margin: 0.5em;
+    padding: 0.5em 2em 0.5em 3em;
+}
+/* Thanks: http://callmenick.com/post/styling-blockquotes-with-css-pseudo-classes */
+blockquote:before {
+    font-family: Georgia, serif;
+    position: absolute;
+    font-size: 6em;
+    line-height: 1;
+    top: 0;
+    left: 0;
+    content: "\201C";
+}
+blockquote:after {
+    font-family: Georgia, serif;
+    position: absolute;
+   /* display: block; don't use this, it raised the quote too high from the bottom - defeated line-height? */
+    float:right;
+    font-size:6em;
+    line-height: 1;
+    right:0;
+    bottom:-0.1em;
+    content: "\201D";
+}
+blockquote footer {
+    padding: 0 2em 0 0;
+    text-align:right;
+}
+blockquote cite:before {
+    content: "\2013";
+}
+
+.svg-content {
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.bg-dark {
+  background-color: #212121!important;
+}
+.container {
+  max-width: 960px;
+}
+
+.header{
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+  background-color: #212121;
+}
+
+.header-text{
+  color: #EEEEEE;
+}
+
+#big-red{
+  color: #e05726;
+}
+#big-blue{
+  color: #049ec4;
+}
+.subheader{
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+
+}
+.btn-primary {
+  color: #fff;
+  background-color: #005ec3;
+  border-color: #005ec3;
+}
+.btn-outline-primary {
+  color: #005ec3;
+  background-color: transparent;
+  background-image: none;
+  border-color: #005ec3;
+}
+.btn-outline-primary:hover {
+  color: #fff;
+  background-color: #005ec3;
+  border-color: #005ec3;
+}
+.loadtrans {
+  color: #005ec3 ;
+
+}
+
+.pricing-header {
+  max-width: 700px;
+}
+.main-text {
+  font-size: 18px;
+}
+.card-deck .card {
+  min-width: 220px;
+}
+
+.display-4{
+	color:#005ec3;
+}
+.display-5 {
+  color:#005ec3;
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+.btn-xlarge {
+    padding: 15px 24px;
+    font-size: 22px; //change this to your desired size
+    line-height: normal;
+    -webkit-border-radius: 8px;
+       -moz-border-radius: 8px;
+            border-radius: 8px;
+
+}
+.border-top { border-top: 1px solid #e5e5e5; }
+.border-bottom { border-bottom: 1px solid #e5e5e5; }
+
+.box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+
+.img-star {
+	max-width: 75%; !important
+}
+.no-padding {
+  padding-left: 0;
+  padding-right: 0;
+}
+.text-primary{
+  color:#FFFF !important;
+}
+.fa-stack{
+  color: #005ec3;
+}
+.notwide {
+   max-width:2000px;
+}
+
+.container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 2000px; /* or 950px */
+}
+.container-fluid-again{
+  max-width: auto;
+}
+.green-icon{
+  color: rgb(0, 204, 0);
+}
+h1{
+  font-size: 3.0rem;
+  font-weight: 300;
+  line-height: 1.2;
+	color: #005ec3;
+ padding-bottom: 1rem;
+}
+
+
+
+h2,h4, h3, h5, h6 {
+  padding-top: 1rem !important;
+	font-weight: 300;
+	line-height: 1.2;
+	color: #005ec3;
+	}
+.border-right {
+  border-right: 1px solid black;
+}
+.logo-red{
+  color: #e15627;
+}
+.logo-green{
+  color: #89be4d;
+}

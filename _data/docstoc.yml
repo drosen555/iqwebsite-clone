@@ -1,0 +1,63 @@
+toc:
+- title: Installation
+  subfolderitems:
+      - page: Overview
+        url: /documentation
+#      - page: Production Installation Path [WORKS]
+#        url: /docs/clientinstall
+      - page: Sandbox Installation Using Oracle VirtualBox
+        url: /docs/virtualbox-sandbox-install
+#      - page: Sandbox Installation Using VMWare Player
+#        url: #
+#      - page: Thing 3
+#        url: #
+#- title: Components installation
+#  subfolderitems:
+#      - page: Overview
+#        url: #
+#      - page: Installing Server On-Premise
+#        url: #
+#      - page: Installing Server On Amazon AWS
+#        url: #
+#      - page: Installing Agent
+#        url: #
+#      - page: Installing Spark Agent
+#        url: #
+#      - page: Installing Client
+#        url: #
+
+- title: Getting started with Integrator
+  subfolderitems:
+      - page: Creating your first job
+        url: /docs/join-example
+#- title: Integrator Administration
+#  subfolderitems:
+#      - page: placeholder1
+#        url: #
+#      - page: placeholder2
+#        url: #
+#      - page: placeholder3
+#        url: #
+#      - page: placeholder4
+#        url: #
+
+
+#- title: Integrator Configuration
+#  subfolderitems:
+#      - page: Overview
+#        url: #
+#      - page: Spark
+#        url: #
+#      - page: Netezza
+#        url: #
+#      - page: Redshift
+#        url: #
+
+#- title: Integrator Usage Documentation
+#  subfolderitems:
+#      - page: Spark User Guide
+#        url: #
+#      - page: Redshift User Guide
+#        url: #
+#      - page: Netezza/PureData User Guide
+#        url: #

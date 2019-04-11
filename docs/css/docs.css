@@ -1,0 +1,25 @@
+img{
+  max-width: 60%;
+}
+
+nav[data-toggle='toc'] {
+  top: 42px;
+}
+ul {
+
+}.toc-link{
+	padding: 0 !important ;
+	list-style-type: none !important;
+}
+/* small screens */
+@media (max-width: 768px) {
+  /* override stickyness so that the navigation does not follow scrolling */
+  nav[data-toggle='toc'] {
+    margin-bottom: 42px;
+    position: static;
+  }
+  nav[data-toggle='toc'] .nav .nav {
+    display: block;
+  }
+
+}

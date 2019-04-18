@@ -8,3 +8,5 @@ categories: jekyll update
 # Welcome to the blog landy!
 
 ## Hope you have fun!!!!!!!!
+
+This is the beta page for the blog posts. Cool. 

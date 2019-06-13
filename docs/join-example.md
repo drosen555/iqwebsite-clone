@@ -14,7 +14,7 @@ In this example we build a simple job that performs an inner join on two tables 
 
 ## Prerequisites
 
--   Installed sandbox.
+-   Installed Integrator.
 
 -   Installed client.
 

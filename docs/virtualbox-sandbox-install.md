@@ -6,14 +6,14 @@ order: 2
 background: /img/docs.jpg
 ---
 # Introduction
-The Integrator sandbox software requires two components to function: the Windows-based client to manipulate your data and the server (running inside the sandbox) to execute your query.
+The ELTMaestro sandbox software requires two components to function: the Windows-based client to manipulate your data and the server (running inside the sandbox) to execute your query.
 
-The Integrator virtual machine contains following applications
+The ELTMaestro virtual machine contains following applications
 pre-installed.
 
--   Integrator Server
+-   ELTMaestro Server
 
--   Integrator Hadoop Agent
+-   ELTMaestro Hadoop Agent
 
 -   Apache Hadoop with spark
 
@@ -23,11 +23,11 @@ Please note that this is **not an ideal configuration for production
 use** and is intended for testing purposes only.
 
 ## Installation Prerequisites:
-1. [Oracle VirtualBox](https://www.virtualbox.org/) Used to run the Integrator sandbox
+1. [Oracle VirtualBox](https://www.virtualbox.org/) Used to run the ELTMaestro sandbox
 
-2. [Integrator Sandbox Image for VirtualBox](/try-a-sandbox/) The Integrator sandbox environment.
+2. [ELTMaestro Sandbox Image for VirtualBox](/try-a-sandbox/) The ELTMaestro sandbox environment.
 
-3. [Integrator Windows Client](/try-a-sandbox/) Used to interact with the Integrator server.
+3. [ELTMaestro Windows Client](/try-a-sandbox/) Used to interact with the ELTMaestro server.
 
 
 
@@ -111,7 +111,7 @@ startup. For debugging purpose you can check contents of log file*
 *The last line on log file should contain* **\"\*\*\*\*\*\*\*\*\* Spark
 Submit \[Found\]\"**
 
--   Launch Integrator Windows Client application.
+-   Launch ELTMaestro Windows Client application.
 
 ![](/docs/sparkinstall_media/sandbox-login.jpg)
 
@@ -123,7 +123,7 @@ Submit \[Found\]\"**
 
 -   Password: ELTMAESTRO
 
--   Click \[Login\] to start using Integrator Client
+-   Click \[Login\] to start using ELTMaestro Client
 
 Default SSH Credentials
 -----------------------
@@ -136,7 +136,7 @@ Default SSH Credentials
 You can use ssh client like Putty to connect to the sandbox by connecting to localhost on port 2222
 using above credentials
 
-Default Integrator Windows Client Login
+Default ELTMaestro Windows Client Login
 ---------------------------------------
 
   |User Name  |  Password  |
@@ -167,7 +167,7 @@ Shut Down Procedure
 Start Up Procedure
 ------------------
 
-Integrator and Hadoop related services are set to automatically start
+ELTMaestro and Hadoop related services are set to automatically start
 when Sandbox Virtual Machine reboots. It may take few minutes for all
 services to come online after server has been started.
 

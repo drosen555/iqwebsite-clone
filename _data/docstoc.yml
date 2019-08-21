@@ -26,11 +26,11 @@ toc:
 #      - page: Installing Client
 #        url: #
 
-- title: Getting started with Integrator
+- title: Getting started with ELTMaestro
   subfolderitems:
       - page: Creating your first job
         url: /docs/join-example
-#- title: Integrator Administration
+#- title: ELTMaestro Administration
 #  subfolderitems:
 #      - page: placeholder1
 #        url: #
@@ -42,7 +42,7 @@ toc:
 #        url: #
 
 
-#- title: Integrator Configuration
+#- title: ELTMaestro Configuration
 #  subfolderitems:
 #      - page: Overview
 #        url: #
@@ -53,7 +53,7 @@ toc:
 #      - page: Redshift
 #        url: #
 
-#- title: Integrator Usage Documentation
+#- title: ELTMaestro Usage Documentation
 #  subfolderitems:
 #      - page: Spark User Guide
 #        url: #

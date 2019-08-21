@@ -14,7 +14,7 @@ In this example we build a simple job that performs an inner join on two tables 
 
 ## Prerequisites
 
--   Installed Integrator.
+-   Installed ELTMaestro.
 
 -   Installed client.
 
@@ -46,7 +46,7 @@ area on the left with the labeled icons (Onstage, Parquetfile, Filereader, etc.)
 
 ![](media/onstage-properties.jpg)
 
-The Onstage step is usually used to import external relational data (e.g. databases) into Integrator via a *connection*.  In the case
+The Onstage step is usually used to import external relational data (e.g. databases) into ELTMaestro via a *connection*.  In the case
 of the sandbox, we have provided a small database and a preconfigured connection named DVD_RENTAL_DATABASE_LOCAL for you to experiment
 with.
 
@@ -147,8 +147,8 @@ the box labeled HDFS Path, click Browse.
 
 ![](media/running1.jpg)
 
-- Integrator will automatically enable Debugging mode.  Icons will appear next to each step, indicating what stage of processing they are at.  The hourglass
-icon next to the Onstage steps indicates that they are importing data into Integrator.
+- ELTMaestro will automatically enable Debugging mode.  Icons will appear next to each step, indicating what stage of processing they are at.  The hourglass
+icon next to the Onstage steps indicates that they are importing data into ELTMaestro.
 
 ![](media/running2.jpg)
 

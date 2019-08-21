@@ -7,11 +7,11 @@ background: "/img/docs.jpg"
 ---
 # Client
 
-Integrator is a tool that helps you do data integration and build data warehouses on powerful platforms such as IBM PureData for Analytics (Netezza), Amazon RedShift, and other systems. This manual covers the installation of Integrator Client on local windows system.
+ELTMaestro is a tool that helps you do data integration and build data warehouses on powerful platforms such as IBM PureData for Analytics (Netezza), Amazon RedShift, and other systems. This manual covers the installation of ELTMaestro Client on local windows system.
 
 ## Installation Steps
 
-* Obtain a copy of Integrator Design Studio Client.
+* Obtain a copy of ELTMaestro Design Studio Client.
 * Run Client_<YOUR PLATFORM_NAME>.exe executable program.
 
 ![](media/image13.png)
@@ -45,15 +45,15 @@ Integrator is a tool that helps you do data integration and build data warehouse
 **Note** that for first time users the default credentials are as
 follows.
 
-Server: Integrator Server Host Name
+Server: ELTMaestro Server Host Name
 
 Port: 8181
 
-User Name: Integrator
+User Name: ELTMaestro
 
-Password: Integrator
+Password: ELTMaestro
 
-**The default password for Integrator EC2 instance is the EC2
+**The default password for ELTMaestro EC2 instance is the EC2
 Instance-ID.**
 
 Please refer to Initial Configuration Guide for user

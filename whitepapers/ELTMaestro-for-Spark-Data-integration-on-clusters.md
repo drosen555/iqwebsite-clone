@@ -1,10 +1,10 @@
 ---
 layout: defaultsecondary
-title: Integrator for Spark - Data integration on clusters
+title: ELTMaestro for Spark - Data integration on clusters
 background: "/img/docs.jpg"
 
 ---
-**This Whitepaper is also available as a PDF** [**here**](/whitepapers/pdf/Integrator-for-Spark.pdf)
+**This Whitepaper is also available as a PDF** [**here**](/whitepapers/pdf/ELTMaestro-for-Spark.pdf)
 
 # Introduction
 
@@ -49,16 +49,16 @@ warehousing is done, making large scale warehouses more ubiquitous and
 easier to build -- but its attractive aspects of efficiency and low
 cost are surrounded by a thorny wall of inaccessibility.
 
-Integrator for Spark is our solution to address this gap -- the sword
-that cuts through the wall of thorns. Integrator for Spark is a new data
+ELTMaestro for Spark is our solution to address this gap -- the sword
+that cuts through the wall of thorns. ELTMaestro for Spark is a new data
 integration tool that allows users to load, transform, and organize data
 on Spark clusters using an intuitive visual dataflow language that is
 familiar to users of traditional ETL tools such as Informatica or
-DataStage. Unlike traditional ETL tools, however, Integrator for Spark
+DataStage. Unlike traditional ETL tools, however, ELTMaestro for Spark
 is powered by the Spark cluster itself and has no independent
 transformation engine. This fact has important consequences in terms of
 the _cost_, _complexity_, and _performance_ of the system -- simply put,
-Integrator for Spark is superior to traditional ETL in all three
+ELTMaestro for Spark is superior to traditional ETL in all three
 dimensions.
 
 ![](/whitepapers/img/spark/image7.jpg)
@@ -66,15 +66,15 @@ dimensions.
 Figure 1
 
 In the next few sections we'll explain some of the principles underlying
-Integrator for Spark, place Integrator for Spark in the context of other
-data integration tools and introduce some of Integrator for Spark's
+ELTMaestro for Spark, place ELTMaestro for Spark in the context of other
+data integration tools and introduce some of ELTMaestro for Spark's
 
 advanced features.
 
-## Integrator for Spark: An ELT solution
+## ELTMaestro for Spark: An ELT solution
 
-Integrator for Spark is based on an architectural concept called _ELT._
-To understand the advantages of Integrator for Spark over other data
+ELTMaestro for Spark is based on an architectural concept called _ELT._
+To understand the advantages of ELTMaestro for Spark over other data
 integration tools, it is necessary to understand the difference between
 ETL and ELT and the reasons why ELT, when feasible, is preferred.
 
@@ -211,16 +211,16 @@ home-grow their own tools for these tasks is laborious and error-prone.
 But if a data warehouse is to operate smoothly, reliably ingesting and
 processing data day after day, these tools are critical.
 
-### Integrator for Spark
+### ELTMaestro for Spark
 
 How, then, can we have our cake and eat it too? How can we get the
 architectural advantages of Figure 4 -- dispensing with the ETL server,
 saving that money, and realizing those performance gains -- without
 giving up the conveniences that tools like DataStage and Informatica
-provide? That is precisely the purpose of Integrator.
+provide? That is precisely the purpose of ELTMaestro.
 
-Integrator's reason for existence is to _enable_ the architecture shown
-in Figure 4. An edition of Integrator exists for each supported platform
+ELTMaestro's reason for existence is to _enable_ the architecture shown
+in Figure 4. An edition of ELTMaestro exists for each supported platform
 that can be used on the right-hand side. We are proud, in this paper, to
 announce that these platforms now include Apache Spark.
 
@@ -231,7 +231,7 @@ data from sources. In cloud-based environments, extracted data may need
 to move across the open internet; this adds a dimension of security
 concerns that need to be addressed.
 
-Integrator extracts data from remote sources by using a scheme of
+ELTMaestro extracts data from remote sources by using a scheme of
 _agents._ Agents are processes installed on data sources that know how
 to communicate with the target. Any number of agents may be installed on
 a source, and any number of agents can be installed overall. When a

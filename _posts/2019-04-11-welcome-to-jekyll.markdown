@@ -1,5 +1,5 @@
 ---
-layout: ''
+layout: defaultsecondary
 title: 'Paradigm shift  '
 date: 2019-04-11 17:41:59 +0000
 categories: jekyll update

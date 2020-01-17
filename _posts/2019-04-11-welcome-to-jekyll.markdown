@@ -1,12 +1,12 @@
 ---
-layout: post
-title: This is the title of the blog
+layout: ''
+title: 'Paradigm shift  '
 date: 2019-04-11 17:41:59 +0000
 categories: jekyll update
 
 ---
-## Hope you have fun!!!!!!!!
+## Paradigm Shift 
 
-Hi landy. 
+## ELT vs. ETL 
 
-This is the beta page for the blog posts. Cool. 
+This is the beta page for the blog posts. Cool.

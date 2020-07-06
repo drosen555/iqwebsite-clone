@@ -7,7 +7,7 @@ featured-text: ELTMaestro Documentation
 secondary-text: Find information about using and setting up ELTMaestro
 
 ---
-## Free Data Warehousing Course
+## [Free Data Warehousing Course](/free_dw_course.html "FDWC")
 
 Want to try ELTMaestro for Snowflake and learn about data warehousing? Check out our free data warehousing course!  Here is the [course material](/uploads/dw-course-facts-and-dimensions.pdf "Course material"). For access to ELTMaestro and Snowflake, [register here.](/free_dw_course.html "Registration")
 
